@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=PricingStructure
+comment0.text=\r\n\ Enumeration\ class\ PricingStructure\ -\ stores\ the\ ticket\ prices\ for\ shows\ based\ on\r\n\ four\ categories\ (adult,\ child,\ student,\ senior\ citizen).\ These\ prices\ will\ be\ \r\n\ adjusted\ during\ promotions\ and\ a\ discount\ is\ applied\ to\ them.\r\n\r\n\ @author\ Jason\ Huggins\r\n\ @version\ 06/01/2022\r\n
+comment1.params=price
+comment1.target=PricingStructure(double)
+comment1.text=\r\n\ Constructor\ of\ enum\ PricingStructure\r\n
+comment2.params=
+comment2.target=double\ getPrice()
+numComments=3

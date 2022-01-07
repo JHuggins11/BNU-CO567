@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Person
+comment0.text=\r\n\ The\ Person\ abstract\ class\ stores\ the\ basic\ details\ for\ each\ person\ \r\n\ registered\ in\ the\ online\ ticketing\ system,\ including\ their\ name,\ \r\n\ date\ of\ birth,\ email\ address\ and\ contact\ number.\ This\ also\ \r\n\ acts\ as\ the\ superclass\ for\ the\ Consumer,\ Agent\ and\ \r\n\ VenueManager\ classes.\r\n\r\n\ @author\ Jason\ Huggins\r\n\ @version\ 06/01/2022\r\n
+comment1.params=id\ firstName\ lastName\ dob\ email\ contactNo
+comment1.target=Person(int,\ java.lang.String,\ java.lang.String,\ java.time.LocalDate,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Person\r\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=newFirstName\ newLastName
+comment3.target=void\ changeName(java.lang.String,\ java.lang.String)
+comment4.params=newEmail
+comment4.target=void\ changeEmail(java.lang.String)
+comment5.params=newContactNo
+comment5.target=void\ changeContactNo(java.lang.String)
+numComments=6

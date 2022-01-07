@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Show
+comment0.text=\r\n\ The\ Show\ class\ stores\ the\ information\ for\ each\ show\ at\ a\ venue,\ including\ its\ name,\r\n\ release\ date\ and\ times,\ as\ well\ as\ its\ age\ rating,\ genre\ and\ duration.\ It\ will\r\n\ also\ be\ used\ to\ make\ an\ ArrayList\ of\ shows\ for\ the\ Venue\ and\ Promotion\ classes.\r\n\r\n\ @author\ Jason\ Huggins\r\n\ @version\ 06/01/2022\r\n
+comment1.params=id\ name\ genre\ releaseDate\ rating\ startTime\ duration
+comment1.target=Show(int,\ java.lang.String,\ java.lang.String,\ java.time.LocalDate,\ int,\ java.time.LocalTime,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Show\r\n
+comment2.params=
+comment2.target=void\ printShow()
+numComments=3

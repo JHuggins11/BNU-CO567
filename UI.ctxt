@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=UI
+comment0.text=\r\n\ The\ UI\ class\ handles\ the\ booking\ process\ for\ a\ ticket\ between\ the\ system\ and\ user.\r\n\ After\ logging\ in\ and\ entering\ their\ details\ (in\ the\ case\ of\ this\ partial\r\n\ implementation,\ it's\ assumed\ that\ this\ has\ already\ been\ done),\ the\ user\r\n\ can\ choose\ the\ venue\ they\ want\ to\ go\ to,\ the\ show\ and\ their\ seat,\ then\r\n\ going\ to\ checkout\ afterwards.\r\n\r\n\ @author\ Jason\ Huggins\r\n\ @version\ 07/01/2022\r\n
+comment1.params=user\ venue
+comment1.target=UI(Person,\ Venue)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ UI.\r\n
+comment2.params=
+comment2.target=void\ selectVenue()
+comment2.text=\r\n\ Asks\ the\ user\ to\ select\ a\ venue\ by\ entering\ a\ number\ from\ a\ list\ of\ options.\r\n\ \r\n\ For\ the\ scope\ of\ this\ project,\ it\ will\ be\ assumed\ that\ there\ will\ be\ only\ one\ venue,\ \r\n\ the\ Bucks\ Centre\ for\ the\ Performing\ Arts,\ and\ this\ will\ be\ set\ as\ the\ default.\ As\r\n\ a\ result,\ this\ method\ won't\ be\ used\ yet\ for\ testing.\r\n
+comment3.params=
+comment3.target=void\ selectShow()
+comment3.text=\r\n\ Asks\ the\ user\ to\ select\ a\ show\ by\ entering\ a\ number\ from\ a\ list\ of\ options.\r\n
+comment4.params=
+comment4.target=void\ selectSeats()
+comment4.text=\r\n\ Asks\ the\ user\ to\ select\ a\ seat\ for\ a\ show\ by\ entering\ a\ number\ from\ a\ list\ \r\n\ of\ options.\r\n
+comment5.params=
+comment5.target=void\ checkout()
+comment5.text=\r\n\ After\ selecting\ a\ venue,\ show\ and\ seat,\ the\ user\ can\ proceed\ to\ checkout\ and\ get\r\n\ their\ ticket\ issued\ after\ payment.\r\n
+numComments=6
