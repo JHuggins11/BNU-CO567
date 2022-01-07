@@ -30,27 +30,28 @@ public class Ticket
     public Ticket(int id, Consumer consumer, Show show, Venue venue, LocalDate startDate, 
         LocalTime startTime, double price, String seat)
     {
-    	ticketID = id;
-    	this.consumer = consumer;
-    	this.show = show;
-    	this.venue = venue;
-    	ticketPurchaseDate = LocalDate.now();
-    	ticketPurchaseTime = LocalTime.now();
-    	ticketStartDate = startDate;
-    	ticketStartTime = startTime;
-    	// TO DO: Change this to use the PricingStructure enum
-    	ticketPrice = price;
-    	seatNo = seat;
+        ticketID = id;
+        this.consumer = consumer;
+        this.show = show;
+        this.venue = venue;
+        ticketPurchaseDate = LocalDate.now();
+        ticketPurchaseTime = LocalTime.now();
+        // TODO: This needs to allow user input for the date and time. 
+        ticketStartDate = startDate;
+        ticketStartTime = startTime;
+        // TODO: Change this to use the PricingStructure enum
+        ticketPrice = price;
+        seatNo = seat;
     }
     
     public void printTicket()
     {
-    	System.out.println("Ticket ID: " + ticketID);
-    	System.out.println("Ticket Holder: " + consumer.getName());
-    	System.out.println("Purchased: " + ticketPurchaseDate + " " + ticketPurchaseTime);
-    	System.out.println("Show: " + show);
-    	System.out.println("Show Date/Time: " + ticketStartDate+ " " + ticketPurchaseTime);
-    	System.out.println("Price: " + ticketPrice);
-    	System.out.println("Seat: " + seatNo);
+        System.out.println("Ticket ID: " + ticketID);
+        System.out.println("Ticket Holder: " + consumer.getName());
+        System.out.println("Purchased: " + ticketPurchaseDate + " " + ticketPurchaseTime);
+        System.out.println("Show: " + show);
+        System.out.println("Show Date/Time: " + ticketStartDate+ " " + ticketPurchaseTime);
+        System.out.println("Price: " + ticketPrice);
+        System.out.println("Seat: " + seatNo);
     }    
 }
