@@ -9,7 +9,7 @@ import java.util.Scanner;
  * going to checkout afterwards.
  *
  * @author Jason Huggins
- * @version 07/01/2022
+ * @version 09/01/2022
  */
 public class UI
 {
@@ -43,27 +43,27 @@ public class UI
      */
     public void selectVenue()
     {
-    	System.out.println("Venue Selection");
-    	// call to method listing venues will be placed here
-    	
-    	while (validChoice = false) 
-    	{
-    		System.out.print("Select a venue (enter a number): ");
-    		choice = sc.nextInt();
-    		
-    		// Once a method to show all venues is made, it will be used here.
-    		/* if (listOfVenues[choice] not out of bounds)
-    		{
-    			selectedVenue(listOfVenues[choice]);
-    			validChoice = true;
-    		}
-    		else
-    		{
-    			println("Invalid choice. Please try again.");
-    		} */
-    	}
-    	
-    	selectShow();
+        System.out.println("Venue Selection");
+        // call to method listing venues will be placed here
+        
+        while (validChoice = false) 
+        {
+            System.out.print("Select a venue (enter a number): ");
+            choice = sc.nextInt();
+            
+            // Once a method to show all venues is made, it will be used here.
+            /* if (listOfVenues[choice] not out of bounds)
+            {
+                selectedVenue(listOfVenues[choice]);
+                validChoice = true;
+            }
+            else
+            {
+                println("Invalid choice. Please try again.");
+            } */
+        }
+        
+        selectShow();
     }
     
     /**
@@ -71,29 +71,29 @@ public class UI
      */
     public void selectShow()
     {
-    	System.out.println("Show Selection");
-    	/* For now, this will just print a list of shows at the venue, but later on will
-    	   the user to choose to filter by upcoming dates or a date range. */
-    	selectedVenue.printShows();
+        System.out.println("Show Selection");
+        /* For now, this will just print a list of shows at the venue, but later on will
+           the user to choose to filter by upcoming dates or a date range. */
+        selectedVenue.printShows();
     
-    	while (validChoice = false) 
-    	{
-    		System.out.print("Select a show (enter a number): ");
-    		choice = sc.nextInt();
-    		
-    		// Checking if the user's choice is out of bounds for the number of shows
-    		if (selectedVenue.shows.size() >= choice)
-    		{
-    			selectedShow = selectedVenue.shows.get(choice);
-    			validChoice = true;
-    		}
-    		else
-    		{
-    			System.out.println("Invalid choice. Please try again.");
-    		}
-    	}
-    	
-    	selectSeats();
+        while (validChoice = false) 
+        {
+            System.out.print("Select a show (enter a number): ");
+            choice = sc.nextInt();
+            
+            // Checking if the user's choice is out of bounds for the number of shows
+            if (selectedVenue.shows.size() >= choice)
+            {
+                selectedShow = selectedVenue.shows.get(choice);
+                validChoice = true;
+            }
+            else
+            {
+                System.out.println("Invalid choice. Please try again.");
+            }
+        }
+        
+        selectSeats();
     }
     
     /**
@@ -102,25 +102,25 @@ public class UI
      */
     public void selectSeats()
     {
-	System.out.println("Seat Selection");
-	selectedVenue.listSeatPlan();
-	
-	while (validChoice = false) 
-	{
-		System.out.print("Select a seat (enter a number): ");
-		choice = sc.nextInt();
-		
-		// Checking if the user's choice is out of bounds for the number of seats
-		if (selectedVenue.seatPlan.size() >= choice)
-		{
-			selectedSeats.add(selectedVenue.seatPlan.get(choice));
-			validChoice = true;
-		}
-		else
-		{
-			System.out.println("Invalid choice. Please try again.");
-		}
-	}        
+        System.out.println("Seat Selection");
+        selectedVenue.listSeatPlan();
+        
+        while (validChoice = false) 
+        {
+            System.out.print("Select a seat (enter a number): ");
+            choice = sc.nextInt();
+            
+            // Checking if the user's choice is out of bounds for the number of seats
+            if (selectedVenue.seatPlan.size() >= choice)
+            {
+                selectedSeats.add(selectedVenue.seatPlan.get(choice));
+                validChoice = true;
+            }
+            else
+            {
+                System.out.println("Invalid choice. Please try again.");
+            }
+        }        
     }
     
     /**
@@ -129,33 +129,33 @@ public class UI
      */
     public void checkout()
     {
-	System.out.println("Checkout");
-	
-	for (Ticket ticket : ticketsInBasket)
-	{
-	    ticket.printTicket();
-        }
+        System.out.println("Checkout");
         
-        while (validChoice = false) 
+        for (Ticket ticket : ticketsInBasket)
         {
-            System.out.print("Confirm choice (enter a number): ");
-            choice = sc.nextInt();
-        
-            if (choice == 1)
-            {
-                // call to method dealing with payment will be placed here
-                validChoice = true;
+            ticket.printTicket();
             }
-            else if (choice == 2)
+            
+            while (validChoice = false) 
             {
-                // call to method going back to the summary page will be placed here
-                validChoice = false;
-            }
-            else 
-            {
-                System.out.println("Invalid choice. Please try again.");
+                System.out.print("Confirm choice (enter a number): ");
+                choice = sc.nextInt();
+            
+                if (choice == 1)
+                {
+                    // call to method dealing with payment will be placed here
+                    validChoice = true;
+                }
+                else if (choice == 2)
+                {
+                    // call to method going back to the summary page will be placed here
+                    validChoice = false;
+                }
+                else 
+                {
+                    System.out.println("Invalid choice. Please try again.");
+                }
             }
         }
-    }
 }
 

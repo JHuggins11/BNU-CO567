@@ -8,7 +8,7 @@ import java.time.LocalTime;
  * the ticket was purchased and when the show is taking place. 
  *
  * @author Jason Huggins
- * @version 07/01/2022
+ * @version 09/01/2022
  */
 public class Ticket
 {
@@ -26,9 +26,11 @@ public class Ticket
     
     /**
      * Constructor for objects of class Ticket
+     * @param startDate The start date of the show the ticket is for in DD/MM/YYYY format.
+     * @param startTime The start time of the show the ticket is for in HH:MM format.
      */
-    public Ticket(int id, Consumer consumer, Show show, Venue venue, LocalDate startDate, 
-        LocalTime startTime, double price, String seat)
+    public Ticket(int id, Consumer consumer, Show show, Venue venue, String startDate, 
+        String startTime, double price, String seat)
     {
         ticketID = id;
         this.consumer = consumer;
@@ -36,14 +38,18 @@ public class Ticket
         this.venue = venue;
         ticketPurchaseDate = LocalDate.now();
         ticketPurchaseTime = LocalTime.now();
-        // TODO: This needs to allow user input for the date and time. 
-        ticketStartDate = startDate;
-        ticketStartTime = startTime;
+        
         // TODO: Change this to use the PricingStructure enum
         ticketPrice = price;
         seatNo = seat;
+        
+        ticketStartDate = DateTimeManager.getDateInput(startDate);
+        ticketStartTime = DateTimeManager.getTimeInput(startTime);
     }
     
+    /**
+     * Prints the details of the ticket.
+     */
     public void printTicket()
     {
         System.out.println("Ticket ID: " + ticketID);

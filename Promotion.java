@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * prices are discounted. 
  *
  * @author Jason Huggins
- * @version 07/01/2022
+ * @version 09/01/2022
  */
 public class Promotion
 {
@@ -24,20 +24,16 @@ public class Promotion
     /**
      * Constructor for objects of class Promotion
      */
-    public Promotion(int id, String name, String description, LocalDate startDate,
-        LocalDate endDate, Venue venue, double discount)
+    public Promotion(int id, String name, String description, String startDate,
+        String endDate, Venue venue, double discount)
     {
         promoID = id;
         promoName = name;
         promoDescription = description;
-        
-        // TODO: These need to allow input on BlueJ for the dates.
-        promoStartDate = startDate;
-        promoEndDate = endDate;
-        
+        promoStartDate = DateTimeManager.getDateInput(startDate);
+        promoEndDate = DateTimeManager.getDateInput(endDate);
         this.venue = venue;
         discountRate = discount;
-        
         promoShows = new ArrayList<Show>();
     }
     

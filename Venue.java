@@ -33,6 +33,9 @@ public class Venue
         seatPlan.add("3A");
     }
     
+    /**
+     * Prints a list of shows being shown at the venue.
+     */
     public void printShows()
     {
         System.out.println("List of Shows");
@@ -44,6 +47,9 @@ public class Venue
         }
     }
     
+    /**
+     * Prints a list of seats forming the seating plan of the venue.
+     */
     public void listSeatPlan()
     {
         System.out.println("Seating Plan");

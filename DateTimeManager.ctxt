@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=DateTimeManager
+comment0.text=\r\n\ The\ DateTimeManager\ class\ handles\ user\ input\ of\ dates\ and\ times,\ retrieving\ it\ as\r\n\ a\ string,\ formatting\ into\ the\ DD/MM/YYYY\ date\ format\ and\ parsing\ it\ into\ a\ LocalDate.\r\n\r\n\ @author\ Jason\ Huggins\r\n\ @version\ 09/01/2022\r\n
+comment1.params=input
+comment1.target=java.time.LocalDate\ getDateInput(java.lang.String)
+comment1.text=\r\n\ Gets\ a\ string\ input\ from\ the\ user\ for\ a\ date\ in\ DD/MM/YYYY\ format,\ which\ is\ then\r\n\ formatted\ and\ parsed\ into\ a\ LocalDate\ with\ that\ date\ format.\ \r\n
+comment2.params=input
+comment2.target=java.time.LocalTime\ getTimeInput(java.lang.String)
+comment2.text=\r\n\ Gets\ a\ string\ input\ from\ the\ user\ for\ a\ time\ in\ HH\:MM\ format,\ which\ is\ then\r\n\ formatted\ and\ parsed\ into\ a\ LocalTime\ with\ that\ time\ format.\ \r\n
+numComments=3

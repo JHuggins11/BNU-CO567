@@ -1,9 +1,10 @@
 #BlueJ class context
 comment0.target=Ticket
-comment0.text=\r\n\ The\ Ticket\ class\ stores\ information\ about\ an\ issued\ ticket\ after\ a\ consumer\ has\r\n\ paid\ for\ their\ order.\ This\ includes\ a\ unique\ ID,\ the\ consumer\ who\ bought\ it,\r\n\ the\ chosen\ venue,\ show\ and\ seat,\ as\ well\ as\ the\ dates\ and\ times\ for\ when\r\n\ the\ ticket\ was\ purchased\ and\ when\ the\ show\ is\ taking\ place.\ \r\n\r\n\ @author\ Jason\ Huggins\r\n\ @version\ 07/01/2022\r\n
+comment0.text=\r\n\ The\ Ticket\ class\ stores\ information\ about\ an\ issued\ ticket\ after\ a\ consumer\ has\r\n\ paid\ for\ their\ order.\ This\ includes\ a\ unique\ ID,\ the\ consumer\ who\ bought\ it,\r\n\ the\ chosen\ venue,\ show\ and\ seat,\ as\ well\ as\ the\ dates\ and\ times\ for\ when\r\n\ the\ ticket\ was\ purchased\ and\ when\ the\ show\ is\ taking\ place.\ \r\n\r\n\ @author\ Jason\ Huggins\r\n\ @version\ 09/01/2022\r\n
 comment1.params=id\ consumer\ show\ venue\ startDate\ startTime\ price\ seat
-comment1.target=Ticket(int,\ Consumer,\ Show,\ Venue,\ java.time.LocalDate,\ java.time.LocalTime,\ double,\ java.lang.String)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Ticket\r\n
+comment1.target=Ticket(int,\ Consumer,\ Show,\ Venue,\ java.lang.String,\ java.lang.String,\ double,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Ticket\r\n\ @param\ startDate\ The\ start\ date\ of\ the\ show\ the\ ticket\ is\ for\ in\ DD/MM/YYYY\ format.\r\n\ @param\ startTime\ The\ start\ time\ of\ the\ show\ the\ ticket\ is\ for\ in\ HH\:MM\ format.\r\n
 comment2.params=
 comment2.target=void\ printTicket()
+comment2.text=\r\n\ Prints\ the\ details\ of\ the\ ticket.\r\n
 numComments=3

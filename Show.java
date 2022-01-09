@@ -7,7 +7,7 @@ import java.time.LocalTime;
  * also be used to make an ArrayList of shows for the Venue and Promotion classes.
  *
  * @author Jason Huggins
- * @version 06/01/2022
+ * @version 09/01/2022
  */
 public class Show
 {
@@ -22,18 +22,21 @@ public class Show
     /**
      * Constructor for objects of class Show
      */
-    public Show(int id, String name, String genre, LocalDate releaseDate, int rating, 
-        LocalTime startTime, int duration)
+    public Show(int id, String name, String genre, String releaseDate, int rating, 
+        String startTime, int duration)
     {
         showID = id;
         showName = name;
         showGenre = genre;
-        showReleaseDate = releaseDate;
+        showReleaseDate = DateTimeManager.getDateInput(releaseDate);
         showAgeRating = rating;
-        showStartTime = startTime;
+        showStartTime = DateTimeManager.getTimeInput(startTime);
         showDuration = duration;
     }
     
+    /**
+     * Prints the details of the show.
+     */
     public void printShow()
     {
         System.out.println("\nShow Name: " + showName);
