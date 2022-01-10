@@ -2,12 +2,13 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 /**
- * The Show class stores the information for each show at a venue, including its name,
- * release date and times, as well as its age rating, genre and duration. It will
- * also be used to make an ArrayList of shows for the Venue and Promotion classes.
+ * The Show class stores the information for each show at a venue, including 
+ * its name, release date and times, as well as its age rating, genre and 
+ * duration. It will also be used to make an ArrayList of shows for the 
+ * Venue and Promotion classes.
  *
  * @author Jason Huggins
- * @version 09/01/2022
+ * @version 10/01/2022
  */
 public class Show
 {
@@ -21,6 +22,8 @@ public class Show
     
     /**
      * Constructor for objects of class Show
+     * @param releaseDate DD-MM-YYYY format (with dashes)
+     * @param startTime HH-MM format (24-hour time; with dashes)
      */
     public Show(int id, String name, String genre, String releaseDate, int rating, 
         String startTime, int duration)

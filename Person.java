@@ -8,7 +8,7 @@ import java.time.LocalDate;
  * VenueManager classes.
  *
  * @author Jason Huggins
- * @version 06/01/2022
+ * @version 10/01/2022
  */
 public abstract class Person
 {
@@ -21,14 +21,15 @@ public abstract class Person
     
     /**
      * Constructor for objects of class Person
+     * @param dob Date of birth in DD-MM-YYYY format (with dashes)
      */
-    public Person(int id, String firstName, String lastName, LocalDate dob, String email,
+    public Person(int id, String firstName, String lastName, String dob, String email,
         String contactNo)
     {
         personID = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        dateOfBirth = dob;
+        dateOfBirth = DateTimeManager.getDateInput(dob);
         emailAddress = email;
         this.contactNo = contactNo;
     }

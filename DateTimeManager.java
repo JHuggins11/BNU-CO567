@@ -4,10 +4,11 @@ import java.time.format.*;
 
 /**
  * The DateTimeManager class handles user input of dates and times, retrieving it as
- * a string, formatting into the DD/MM/YYYY date format and parsing it into a LocalDate.
+ * a string, formatting into the DD/MM/YYYY date format and parsing it into 
+ * a LocalDate.
  *
  * @author Jason Huggins
- * @version 09/01/2022
+ * @version 10/01/2022
  */
 public class DateTimeManager
 {
@@ -17,7 +18,7 @@ public class DateTimeManager
      */
     public static LocalDate getDateInput(String input)
     {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("DD/MM/YYYY");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-uuuu");
         LocalDate formattedDate = LocalDate.parse(input, formatter); 
         
         return formattedDate;
@@ -29,7 +30,7 @@ public class DateTimeManager
      */
     public static LocalTime getTimeInput(String input)
     {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:MM");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH-mm");
         LocalTime formattedTime = LocalTime.parse(input, formatter);
         
         return formattedTime;

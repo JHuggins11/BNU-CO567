@@ -9,7 +9,7 @@ import java.util.Scanner;
  * going to checkout afterwards.
  *
  * @author Jason Huggins
- * @version 09/01/2022
+ * @version 10/01/2022
  */
 public class UI
 {
@@ -63,7 +63,7 @@ public class UI
             } */
         }
         
-        selectShow();
+        //selectShow();
     }
     
     /**
@@ -93,7 +93,7 @@ public class UI
             }
         }
         
-        selectSeats();
+        //selectSeats();
     }
     
     /**

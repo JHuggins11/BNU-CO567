@@ -8,7 +8,7 @@ import java.time.LocalTime;
  * the ticket was purchased and when the show is taking place. 
  *
  * @author Jason Huggins
- * @version 09/01/2022
+ * @version 10/01/2022
  */
 public class Ticket
 {
@@ -26,8 +26,8 @@ public class Ticket
     
     /**
      * Constructor for objects of class Ticket
-     * @param startDate The start date of the show the ticket is for in DD/MM/YYYY format.
-     * @param startTime The start time of the show the ticket is for in HH:MM format.
+     * @param startDate In DD-MM-YYYY format (with dashes)
+     * @param startTime In HH-MM format (24-hour time; with dashes)
      */
     public Ticket(int id, Consumer consumer, Show show, Venue venue, String startDate, 
         String startTime, double price, String seat)

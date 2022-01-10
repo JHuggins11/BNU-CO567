@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Venue
-comment0.text=\r\n\ The\ Venue\ class\ stores\ the\ basic\ details\ of\ a\ venue,\ such\ as\ a\ unique\ ID,\ its\ name,\r\n\ the\ venue\ manager\ assigned\ to\ the\ venue,\ the\ list\ of\ shows\ held\ there\ and\ \r\n\ its\ seating\ plan.\r\n\r\n\ @author\ Jason\ Huggins\r\n\ @version\ 07/01/2022\r\n
-comment1.params=id\ name\ venueManager
-comment1.target=Venue(int,\ java.lang.String,\ Person)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Venue\r\n
+comment0.text=\r\n\ The\ Venue\ class\ stores\ the\ basic\ details\ of\ a\ venue,\ such\ as\ a\ unique\ ID,\ its\ name,\r\n\ the\ venue\ manager\ assigned\ to\ the\ venue,\ the\ list\ of\ shows\ held\ there\ and\ \r\n\ its\ seating\ plan.\r\n\r\n\ @author\ Jason\ Huggins\r\n\ @version\ 10/01/2022\r\n
+comment1.params=id\ name
+comment1.target=Venue(int,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Venue\r\n\ (excluding\ the\ venue\ manager\ for\ now\ to\ test\ solely\ from\ the\r\n\ consumer's\ perspective)\r\n
 comment2.params=
 comment2.target=void\ printShows()
 comment2.text=\r\n\ Prints\ a\ list\ of\ shows\ being\ shown\ at\ the\ venue.\r\n

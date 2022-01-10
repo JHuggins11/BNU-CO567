@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * its seating plan.
  *
  * @author Jason Huggins
- * @version 07/01/2022
+ * @version 10/01/2022
  */
 public class Venue
 {
@@ -18,12 +18,13 @@ public class Venue
     
     /**
      * Constructor for objects of class Venue
+     * (excluding the venue manager for now to test solely from the
+     * consumer's perspective)
      */
-    public Venue(int id, String name, Person venueManager)
+    public Venue(int id, String name)
     {
         venueID = id;
         venueName = name;
-        this.venueManager = venueManager;
         shows = new ArrayList<Show>();
         seatPlan = new ArrayList<String>();
         

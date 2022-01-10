@@ -1,11 +1,12 @@
 
 /**
- * Enumeration class PricingStructure - stores the ticket prices for shows based on
- * four categories (adult, child, student, senior citizen). These prices will be 
- * adjusted during promotions and a discount is applied to them.
+ * Enumeration class PricingStructure - stores the ticket prices for shows 
+ * based on four categories (adult, child, student, senior citizen). 
+ * These prices will be adjusted during promotions and a discount 
+ * is applied to them.
  *
  * @author Jason Huggins
- * @version 06/01/2022
+ * @version 10/01/2022
  */
 public enum PricingStructure
 {

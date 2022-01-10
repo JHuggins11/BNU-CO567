@@ -2,13 +2,13 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 /**
- * The Promotion class stores the information about each promotion that a venue runs. It
- * will include information on the promotion's name, dates, times, a description and a 
- * discount rate that will be applied to the PricingStructure enum so the ticket 
- * prices are discounted. 
+ * The Promotion class stores the information about each promotion that a 
+ * venue runs. It will include information on the promotion's name, dates, 
+ * times, a description and a discount rate that will be applied to the 
+ * PricingStructure enum so the ticket prices are discounted. 
  *
  * @author Jason Huggins
- * @version 09/01/2022
+ * @version 10/01/2022
  */
 public class Promotion
 {
@@ -23,6 +23,8 @@ public class Promotion
     
     /**
      * Constructor for objects of class Promotion
+     * @param startDate DD-MM-YYYY format (with dashes)
+     * @param endDate DD-MM-YYYY format (with dashes)
      */
     public Promotion(int id, String name, String description, String startDate,
         String endDate, Venue venue, double discount)

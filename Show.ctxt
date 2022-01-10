@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Show
-comment0.text=\r\n\ The\ Show\ class\ stores\ the\ information\ for\ each\ show\ at\ a\ venue,\ including\ its\ name,\r\n\ release\ date\ and\ times,\ as\ well\ as\ its\ age\ rating,\ genre\ and\ duration.\ It\ will\r\n\ also\ be\ used\ to\ make\ an\ ArrayList\ of\ shows\ for\ the\ Venue\ and\ Promotion\ classes.\r\n\r\n\ @author\ Jason\ Huggins\r\n\ @version\ 09/01/2022\r\n
+comment0.text=\r\n\ The\ Show\ class\ stores\ the\ information\ for\ each\ show\ at\ a\ venue,\ including\ \r\n\ its\ name,\ release\ date\ and\ times,\ as\ well\ as\ its\ age\ rating,\ genre\ and\ \r\n\ duration.\ It\ will\ also\ be\ used\ to\ make\ an\ ArrayList\ of\ shows\ for\ the\ \r\n\ Venue\ and\ Promotion\ classes.\r\n\r\n\ @author\ Jason\ Huggins\r\n\ @version\ 10/01/2022\r\n
 comment1.params=id\ name\ genre\ releaseDate\ rating\ startTime\ duration
 comment1.target=Show(int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String,\ int)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Show\r\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Show\r\n\ @param\ releaseDate\ DD-MM-YYYY\ format\ (with\ dashes)\r\n\ @param\ startTime\ HH-MM\ format\ (24-hour\ time;\ with\ dashes)\r\n
 comment2.params=
 comment2.target=void\ printShow()
 comment2.text=\r\n\ Prints\ the\ details\ of\ the\ show.\r\n
