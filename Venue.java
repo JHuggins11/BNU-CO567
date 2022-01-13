@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * the venue manager assigned to the venue, the list of shows held there and 
  * its seating plan.
  *
- * @author Jason Huggins
+ * @author Jason Huggins, Tyronne Bradburn, Dan Hale
  * @version 10/01/2022
  */
 public class Venue
@@ -28,10 +28,14 @@ public class Venue
         shows = new ArrayList<Show>();
         seatPlan = new ArrayList<String>();
         
-        // For testing, will add 3 seats to the seating plan
+        // For testing, will add 6 seats to the seating plan
+        seatPlan.add("0A");
         seatPlan.add("1A");
         seatPlan.add("2A");
         seatPlan.add("3A");
+        seatPlan.add("1B");
+        seatPlan.add("2B");
+        seatPlan.add("3B");
     }
     
     /**
