@@ -111,6 +111,10 @@ public class UI
         ageGroups[2] = sc.nextInt();
         System.out.print("Enter the amount of Senior Citizens attending: ");
         ageGroups[3] = sc.nextInt();
+        System.out.println("Adults: " + ageGroups[0]);
+        System.out.println("Childern: " + ageGroups[1]);
+        System.out.println("Students: " + ageGroups[2]);
+        System.out.println("Senoir Citizens: " + ageGroups[3]);
     }
     
     /**
