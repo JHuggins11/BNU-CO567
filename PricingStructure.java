@@ -5,7 +5,7 @@
  * These prices will be adjusted during promotions and a discount 
  * is applied to them.
  *
- * @author Jason Huggins
+ * @author Jason Huggins, Tyronne Bradburn, Dan Hale.
  * @version 10/01/2022
  */
 public enum PricingStructure
@@ -17,12 +17,12 @@ public enum PricingStructure
     SENIOR_PRICE(3.90);
     
     // Private attribute to get each ticket price.
-    private double price;
+    private final double price;
     
     /**
      * Constructor of enum PricingStructure
      */
-    PricingStructure(double price)
+    private PricingStructure(double price)
     {
         this.price = price;
     }

@@ -8,7 +8,7 @@ import java.util.Scanner;
  * can choose the venue they want to go to, the show and their seat, then
  * going to checkout afterwards.
  *
- * @author Jason Huggins
+ * @author Jason Huggins, Tyronne Bradburn, Dan Hale.
  * @version 10/01/2022
  */
 public class UI
@@ -18,6 +18,7 @@ public class UI
     Venue selectedVenue;
     Show selectedShow;
     int noOfPeople;
+    int[] ageGroups;
     ArrayList<String> selectedSeats;
     ArrayList<Ticket> ticketsInBasket;
     boolean validChoice;
@@ -32,6 +33,7 @@ public class UI
         selectedVenue = venue; // For testing, will be set as BCPA by default
         validChoice = false;
         sc = new Scanner(System.in);
+        ageGroups = new int[4]; 
     }
 
     /**
@@ -97,6 +99,21 @@ public class UI
     }
     
     /**
+     * Input the amount of people who are attending the show.
+     */
+    public void inputAttendees()
+    {
+        System.out.print("Enter the amount of Adults attending: ");
+        ageGroups[0] = sc.nextInt(); 
+        System.out.print("Enter the amount of Childern attending: ");
+        ageGroups[1] = sc.nextInt();
+        System.out.print("Enter the amount of Students attending: ");
+        ageGroups[2] = sc.nextInt();
+        System.out.print("Enter the amount of Senior Citizens attending: ");
+        ageGroups[3] = sc.nextInt();
+    }
+    
+    /**
      * Asks the user to select a seat for a show by entering a number from a list 
      * of options.
      */
@@ -134,28 +151,28 @@ public class UI
         for (Ticket ticket : ticketsInBasket)
         {
             ticket.printTicket();
-            }
+        }
             
-            while (validChoice = false) 
+        while (validChoice = false) 
+        {
+            System.out.print("Confirm choice (enter a number): ");
+            choice = sc.nextInt();
+            
+            if (choice == 1)
             {
-                System.out.print("Confirm choice (enter a number): ");
-                choice = sc.nextInt();
-            
-                if (choice == 1)
-                {
-                    // call to method dealing with payment will be placed here
-                    validChoice = true;
-                }
-                else if (choice == 2)
-                {
-                    // call to method going back to the summary page will be placed here
-                    validChoice = false;
-                }
-                else 
-                {
-                    System.out.println("Invalid choice. Please try again.");
-                }
+                // call to method dealing with payment will be placed here
+                validChoice = true;
+            }
+            else if (choice == 2)
+            {
+                // call to method going back to the summary page will be placed here
+                validChoice = false;
+            }
+            else 
+            {
+                System.out.println("Invalid choice. Please try again.");
             }
         }
+    }
 }
 
