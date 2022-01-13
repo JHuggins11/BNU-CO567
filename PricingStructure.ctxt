@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=PricingStructure
-comment0.text=\r\n\ Enumeration\ class\ PricingStructure\ -\ stores\ the\ ticket\ prices\ for\ shows\ \r\n\ based\ on\ four\ categories\ (adult,\ child,\ student,\ senior\ citizen).\ \r\n\ These\ prices\ will\ be\ adjusted\ during\ promotions\ and\ a\ discount\ \r\n\ is\ applied\ to\ them.\r\n\r\n\ @author\ Jason\ Huggins,\ Tyronne\ Bradburn,\ Dan\ Hale.\r\n\ @version\ 10/01/2022\r\n
+comment0.text=\r\n\ Enumeration\ class\ PricingStructure\ -\ stores\ the\ ticket\ prices\ for\ shows\ \r\n\ based\ on\ four\ categories\ (adult,\ child,\ student,\ senior\ citizen).\ \r\n\ These\ prices\ will\ be\ adjusted\ during\ promotions\ and\ a\ discount\ \r\n\ is\ applied\ to\ them.\r\n\r\n\ @author\ Jason\ Huggins,\ Tyronne\ Bradburn,\ Dan\ Hale\r\n\ @version\ 13/01/2022\r\n
 comment1.params=price
 comment1.target=PricingStructure(double)
 comment1.text=\r\n\ Constructor\ of\ enum\ PricingStructure\r\n

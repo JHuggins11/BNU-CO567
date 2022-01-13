@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=TestInitialiser
-comment0.text=\r\n\ The\ TestInitialiser\ class\ is\ solely\ used\ for\ testing\ the\ program\ by\r\n\ creating\ some\ object\ instances\ of\ the\ Consumer,\ Show,\ Venue\ and\r\n\ Promotion\ classes\ with\ test\ data,\ which\ will\ save\ time\ with\ \r\n\ not\ having\ to\ re-enter\ test\ data\ manually\ each\ time\ an\r\n\ object\ is\ made\ in\ BlueJ.\r\n\r\n\ @author\ Jason\ Huggins\r\n\ @version\ 13/01/2022\r\n
+comment0.text=\r\n\ The\ TestInitialiser\ class\ is\ solely\ used\ for\ testing\ the\ program\ by\r\n\ creating\ some\ object\ instances\ of\ the\ Consumer,\ Show,\ Venue\ and\r\n\ Promotion\ classes\ with\ test\ data,\ which\ will\ save\ time\ with\ \r\n\ not\ having\ to\ re-enter\ test\ data\ manually\ each\ time\ an\r\n\ object\ is\ made\ in\ BlueJ.\r\n\r\n\ @author\ Jason\ Huggins,\ Tyronne\ Bradburn\r\n\ @version\ 13/01/2022\r\n
 comment1.params=
 comment1.target=TestInitialiser()
-comment1.text=\r\n\ Constructer.\r\n
+comment1.text=\r\n\ Constructor\ -\ initialises\ an\ object\ instance\ for\ the\ Consumer,\ Venue,\r\n\ Show\ and\ Promotion\ classes.\r\n
 numComments=2
