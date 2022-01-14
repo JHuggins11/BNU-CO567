@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * its seating plan.
  *
  * @author Jason Huggins, Tyronne Bradburn, Dan Hale
- * @version 10/01/2022
+ * @version 13/01/2022
  */
 public class Venue
 {

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=UI
-comment0.text=\r\n\ The\ UI\ class\ handles\ the\ booking\ process\ for\ a\ ticket\ between\ the\ system\ and\ user.\r\n\ After\ logging\ in\ and\ entering\ their\ details\ (in\ the\ case\ of\ this\ partial\r\n\ implementation,\ it's\ assumed\ that\ this\ has\ already\ been\ done),\ the\ user\r\n\ can\ choose\ the\ venue\ they\ want\ to\ go\ to,\ the\ show\ and\ their\ seat,\ then\r\n\ going\ to\ checkout\ afterwards.\r\n\r\n\ @author\ Jason\ Huggins,\ Tyronne\ Bradburn,\ Dan\ Hale.\r\n\ @version\ 10/01/2022\r\n
+comment0.text=\r\n\ The\ UI\ class\ handles\ the\ booking\ process\ for\ a\ ticket\ between\ the\ system\ and\ user.\r\n\ After\ logging\ in\ and\ entering\ their\ details\ (in\ the\ case\ of\ this\ partial\r\n\ implementation,\ it's\ assumed\ that\ this\ has\ already\ been\ done),\ the\ user\r\n\ can\ choose\ the\ venue\ they\ want\ to\ go\ to,\ the\ show\ and\ their\ seat,\ then\r\n\ going\ to\ checkout\ afterwards.\r\n\r\n\ @author\ Jason\ Huggins,\ Tyronne\ Bradburn,\ Dan\ Hale\r\n\ @version\ 13/01/2022\r\n
 comment1.params=user\ venue
 comment1.target=UI(Person,\ Venue)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ UI.\r\n

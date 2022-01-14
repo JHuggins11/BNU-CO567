@@ -8,8 +8,8 @@ import java.util.Scanner;
  * can choose the venue they want to go to, the show and their seat, then
  * going to checkout afterwards.
  *
- * @author Jason Huggins, Tyronne Bradburn, Dan Hale.
- * @version 10/01/2022
+ * @author Jason Huggins, Tyronne Bradburn, Dan Hale
+ * @version 13/01/2022
  */
 public class UI
 {

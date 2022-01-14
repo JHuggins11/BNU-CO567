@@ -5,8 +5,8 @@
  * These prices will be adjusted during promotions and a discount 
  * is applied to them.
  *
- * @author Jason Huggins, Tyronne Bradburn, Dan Hale.
- * @version 10/01/2022
+ * @author Jason Huggins, Tyronne Bradburn, Dan Hale
+ * @version 13/01/2022
  */
 public enum PricingStructure
 {
